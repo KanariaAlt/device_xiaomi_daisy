@@ -26,7 +26,7 @@ AB_OTA_PARTITIONS += \
 endif
 
 # Display
-TARGET_SCREEN_DENSITY := 420
+TARGET_SCREEN_DENSITY := 288
 
 # Partitions
 ifeq ($(TARGET_DEVICE), daisy)
