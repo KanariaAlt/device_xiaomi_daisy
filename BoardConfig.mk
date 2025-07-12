@@ -7,8 +7,8 @@
 DEVICE_PATH := device/xiaomi/daisy
 USES_DEVICE_XIAOMI_DAISY := true
 
-# Inherit from common msm8953-common
-include device/xiaomi/msm8953-common/BoardConfigCommon.mk
+# Inherit from common mititanium-common
+include device/xiaomi/mititanium-common/BoardConfigCommon.mk
 
 # Kernel
 TARGET_KERNEL_CONFIG += xiaomi/daisy.config xiaomi/sakura.config
