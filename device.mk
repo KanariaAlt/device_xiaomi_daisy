@@ -5,7 +5,7 @@
 #
 
 # Inherit from mititanium-common
-$(call inherit-product, device/xiaomi/mititanium-common/msm8953.mk)
+$(call inherit-product, device/xiaomi/mititanium-common/mititanium.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
