@@ -11,7 +11,10 @@ USES_DEVICE_XIAOMI_DAISY := true
 include device/xiaomi/mititanium-common/BoardConfigCommon.mk
 
 # Kernel
-TARGET_KERNEL_CONFIG += xiaomi/daisy.config xiaomi/sakura.config
+TARGET_KERNEL_VERSION := 4.9
+
+# Kernel
+TARGET_KERNEL_CONFIG := vendor/mi8953-perf_defconfig
 
 ifeq ($(AB_OTA_UPDATER), true)
 # Filesystem
