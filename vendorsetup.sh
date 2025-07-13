@@ -8,17 +8,17 @@ else
 fi
 
 # Clone device camera tree if not exists
-if [ ! -d "device/xiaomi/ysl/camera" ]; then
-    git clone https://github.com/KanariaAlt/device_xiaomi-msm8953_camera -b main device/xiaomi/ysl/camera
+if [ ! -d "device/xiaomi/daisy/camera" ]; then
+    git clone https://github.com/KanariaAlt/device_xiaomi-msm8953_camera -b 4.9 device/xiaomi/daisy/camera
 else
-    echo "device/xiaomi/ysl/camera already exists, skipping clone"
+    echo "device/xiaomi/daisy/camera already exists, skipping clone"
 fi
 
 # Clone proprietary if not exists
-if [ ! -d "vendor/xiaomi/ysl" ]; then
-    git clone --depth=1 https://github.com/KanariaAlt/proprietary_vendor_xiaomi_daisy -b 14 vendor/xiaomi/ysl
+if [ ! -d "vendor/xiaomi/daisy" ]; then
+    git clone --depth=1 https://github.com/KanariaAlt/proprietary_vendor_xiaomi_daisy -b 14 vendor/xiaomi/daisy
 else
-    echo "vendor/xiaomi/ysl already exists, skipping clone"
+    echo "vendor/xiaomi/daisy already exists, skipping clone"
 fi
 
 # Clone commmon proprietary if not exists
