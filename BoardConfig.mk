@@ -11,12 +11,10 @@ USES_DEVICE_XIAOMI_DAISY := true
 include device/xiaomi/mititanium-common/BoardConfigCommon.mk
 
 # Kernel
-TARGET_KERNEL_VERSION := 4.9
-
-# Kernel
-TARGET_KERNEL_CONFIG := vendor/mi8953-perf_defconfig
-
+TARGET_KERNEL_CONFIG := vendor/msm8953-perf_defconfig
+TARGET_KERNEL_VERSION := 4.19
 ifeq ($(AB_OTA_UPDATER), true)
+
 # Filesystem
 BOARD_USES_RECOVERY_AS_BOOT := true
 TARGET_NO_RECOVERY := true
